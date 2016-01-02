@@ -5,7 +5,7 @@
     "app": "nodemon app"
   },
   "engines": {
-    "node": "= 4.0.0"
+    "node": "^= 4.0.0"
   },
   "jshintConfig": {
     "esnext": true
