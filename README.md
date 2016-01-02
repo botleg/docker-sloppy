@@ -4,3 +4,5 @@ Simple Node.js application with Redis as data store to demostrate docker hosting
 
 1. `/key/value`: to set `key` as `value`
 2. `/key`: returns the value of the `key`
+
+The working example of this repo can be found [here](http://botleg.sloppy.zone).
