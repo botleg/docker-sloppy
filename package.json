@@ -1,0 +1,22 @@
+{
+  "name": "docker-sloppy",
+  "scripts": {
+    "start": "node app",
+    "app": "nodemon app"
+  },
+  "engines": {
+    "node": "= 4.0.0"
+  },
+  "jshintConfig": {
+    "esnext": true
+  },
+  "dependencies": {
+    "co-redis": "^1.2.1",
+    "koa": "^0.21.0",
+    "koa-router": "^5.1.1",
+    "redis": "^0.12.1"
+  },
+  "devDependencies": {
+    "nodemon": "1.8.1"
+  }
+}
