@@ -4,7 +4,13 @@ module.exports = function(redis) {
 	router.redirect('/', '/foo');
 
 	router.get('/:key', function*(next) {
-		this.body = yield redis.get(this.params.key);
+		var val = yield redis.get(this.params.key);
+		
+		if (val !== null) {
+			this.body = val;
+		} else {
+			this.body = "NULL";
+		}
 	});
 
 	router.get('/:key/:value', function*(next) {
